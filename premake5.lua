@@ -1,8 +1,8 @@
--- WorkspaceName (workspace)
+-- __Workspace_Name__ (workspace)
 
-workspace "WorkspaceName"
+workspace "__Workspace_Name__"
   architecture("x86_64")
-  startproject("ProjectName")
+  startproject("__Project_Name__")
 
   configurations {
     "Release",
@@ -43,4 +43,4 @@ group "Dependencies"
   -- include("libs/dependency_source_code")
 
 group ""
-  include("ProjectName")
+  include("__Project_Name__")

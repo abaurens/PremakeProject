@@ -1,4 +1,4 @@
-#include "ProjectName.hpp"
+#include "__Project_Name__.hpp"
 
 #include <iostream>
 
