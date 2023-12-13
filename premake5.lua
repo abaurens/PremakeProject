@@ -1,5 +1,7 @@
 -- __Workspace_Name__ (workspace)
 
+require "premake/workspace-files"
+
 workspace "__Workspace_Name__"
   architecture("x86_64")
   startproject("__Project_Name__")
@@ -26,8 +28,13 @@ defines {
     "",
 }
 
-  filter "configurations:windows"
-    defines "_WIN32"
+workspace_files {
+  "premake5.lua",
+  ".gitignore"
+}
+
+filter "configurations:windows"
+  defines "_WIN32"
 
 filter "configurations:Debug"
   defines "_DEBUG"
