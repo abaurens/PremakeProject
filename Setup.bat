@@ -2,6 +2,10 @@
 	@Powershell.exe -executionpolicy remotesigned -File .\TemplateScripts\RenameTemplate.ps1
 	@if exist .\TemplateScripts\Marker (
 	  @RD /S /Q ".\TemplateScripts"
+
+	  git add --all
+	  git commit -m "Initial project setup"
+	  git push origin master
 	)
 )
 
